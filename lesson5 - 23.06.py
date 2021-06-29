@@ -31,9 +31,9 @@
 
 # my_symbol_count = my_str.count(my_symbol)
 # print(my_symbol_count)
-#
+
 # ####################################
-#
+
 # print(f"{my_symbol}\n" * my_symbol_count) #2 вариант
 # # for _ in range(my_symbol_count):  #1 вариант
 # #      print(my_symbol)
@@ -61,15 +61,15 @@
 
 #2 подход
 
-# my_str = "qwerty"
-# my_list = []
-#
-# # for index, symbol in enumerate(my_str):
-# #     if not index % 2:
-# #         my_list.append(symbol)
-# #
-# # print(my_list)
-#
+my_str = "qwerty"
+my_list = []
+
+for index, symbol in enumerate(my_str):
+    if not index % 2:
+        my_list.append(symbol)
+
+print(my_list)
+
 # ####################################
 # for value in enumerate(my_str):
 #     print(value)
@@ -85,7 +85,7 @@
 # print(my_list)
 
 #####################################
-my_number = 45678087654567808765456999780876545678
+# my_number = 45678087654567808765456999780876545678
 # digit_count = len(str(my_number))
 # print(digit_count)
 
@@ -100,11 +100,11 @@ my_number = 45678087654567808765456999780876545678
 # new_number_str = number_str[::-1]
 # new_number = int(new_number_str)
 # print(new_number)
-#
+
 # new_number = int(str(my_number)[::-1])
 # print(new_number)
 #####################################
-#
+
 # my_list = [1, 2, 5, 3, -8 ,4]
 # sorted_list = sorted(my_list, reverse=True)
 # print(sorted_list)
@@ -116,11 +116,13 @@ my_number = 45678087654567808765456999780876545678
 
 #####################################
 
-number_str = str(my_number)
-sorted_number_symbols_list = sorted(number_str, reverse=True)
-new_number_str = ''.join(sorted_number_symbols_list)
-new_number = int(new_number_str)
-print(new_number)
+# number_str = str(my_number)
+# sorted_number_symbols_list = sorted(number_str, reverse=True)
+# new_number_str = ''.join(sorted_number_symbols_list)
+# new_number = int(new_number_str)
+# print(new_number)
+
+# записать одной строкой
 
 
 
