@@ -60,15 +60,15 @@
 # print(my_list)
 
 #2 подход
-
-my_str = "qwerty"
-my_list = []
-
-for index, symbol in enumerate(my_str):
-    if not index % 2:
-        my_list.append(symbol)
-
-print(my_list)
+#
+# my_str = "qwerty"
+# my_list = []
+#
+# for index, symbol in enumerate(my_str):
+#     if not index % 2:
+#         my_list.append(symbol)
+#
+# print(my_list)
 
 # ####################################
 # for value in enumerate(my_str):

@@ -47,6 +47,13 @@
 
 #####################################
 #6
+my_str = '20 больше чем 10 но меньше чем 100'
+int_sum = 0
+for value in my_str.split():
+    if value.isdigit():
+        int_sum += int(value)
+print(int_sum)
 
+#####################################
 
 
