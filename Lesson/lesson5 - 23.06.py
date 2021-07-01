@@ -1,5 +1,3 @@
-# value = input("Введи число")
-
 # my_list = [1, 2, 3]
 # new_list = [my_list.copy(), my_list.copy(), my_list.copy()]
 # print(new_list)
