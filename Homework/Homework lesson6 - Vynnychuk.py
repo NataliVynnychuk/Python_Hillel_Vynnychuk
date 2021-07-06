@@ -15,7 +15,6 @@ for symbol in my_list:
     if symbol.startswith("a"):
         new_list.append(symbol)
 print(new_list)
-
 #######################################
 # 3
 my_list = ["qaae", "rty", "wsd", "zaaac"]
@@ -24,7 +23,6 @@ for index in range(len(my_list)):
     if "a" in my_list[index]:
         new_list.append(my_list[index])
 print(new_list)
-
 #######################################
 # 4
 my_list = [1, 2, 3, "11", "22", 33, "qwe", 0]
