@@ -6,7 +6,7 @@
 #     my_result.append(my_list_1[index])
 #     my_result.append(my_list_2[index])
 # print(my_result)
-#
+# #
 # #######################################
 #
 # Б)
@@ -107,16 +107,16 @@
 # for symbol in set(my_str):
 #     print(symbol, my_str.count(symbol))
 #
-# my_str_1 = "qwerty1234567890"
-# my_str_2 = "qweasd123456789"
-#
-# my_set_1 = set(my_str_1)
-# my_set_2 = set(my_str_2)
-#
+my_str_1 = "qwerty1234567890"
+my_str_2 = "qweasd123456789"
+
+my_set_1 = set(my_str_1)
+my_set_2 = set(my_str_2)
+
 # intersection = my_set_1.intersection(my_set_2)
 # print(intersection)
-# union = my_set_1.union(my_set_2)
-# print(union)
+union = my_set_1.union(my_set_2)
+print(union)
 # difference = my_set_1.difference(my_set_2)
 # print(difference)
 # ###############################################
