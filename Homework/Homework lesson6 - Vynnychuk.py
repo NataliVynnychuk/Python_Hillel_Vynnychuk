@@ -41,7 +41,7 @@ print(my_list)
 
 # ИЛИ:
 
-my_str = "qwe123asd"
+my_str = "qwe123asdqwe"
 new_list = []
 for symbol in set(my_str):
     if my_str.count(symbol) == 1:
