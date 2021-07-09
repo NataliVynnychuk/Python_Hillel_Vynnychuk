@@ -33,12 +33,20 @@ for index in range(len(my_list)):
 print(new_list)
 #######################################
 # 5
-my_str = "qwertyqwertyqwerty"
+my_str = "qwe123asd"
 my_list = []
 my_set = set(my_str)
-my_list.append(my_set)
 my_list = list(my_set)
 print(my_list)
+
+# ИЛИ:
+
+my_str = "qwe123asd"
+new_list = []
+for symbol in set(my_str):
+    if my_str.count(symbol) == 1:
+        new_list.append(symbol)
+print(new_list)
 #############################
 # 6
 my_str_1 = "qwerty123"
@@ -47,7 +55,6 @@ my_list = []
 my_set_1 = set(my_str_1)
 my_set_2 = set(my_str_2)
 intersection = my_set_1.intersection(my_set_2)
-my_list.append(intersection)
 my_list = list(intersection)
 print(my_list)
 #############################
