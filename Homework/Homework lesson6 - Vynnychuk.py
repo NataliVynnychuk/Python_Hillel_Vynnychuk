@@ -33,14 +33,6 @@ for index in range(len(my_list)):
 print(new_list)
 #######################################
 # 5
-my_str = "qwe123asd"
-my_list = []
-my_set = set(my_str)
-my_list = list(my_set)
-print(my_list)
-
-# ИЛИ:
-
 my_str = "qwe123asdqwe"
 new_list = []
 for symbol in set(my_str):
