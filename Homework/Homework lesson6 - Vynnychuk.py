@@ -19,9 +19,9 @@ print(new_list)
 # 3
 my_list = ["qaae", "rty", "wsd", "zaaac"]
 new_list = []
-for index in range(len(my_list)):
-    if "a" in my_list[index]:
-        new_list.append(my_list[index])
+for str_ in range(len(my_list)):
+    if "a" in my_list[str_]:
+        new_list.append(my_list[str_])
 print(new_list)
 #######################################
 # 4
