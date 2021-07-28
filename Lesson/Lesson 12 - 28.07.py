@@ -48,6 +48,7 @@ my_string = "cfghujkjhvcfgtyuj,zxc 127.0.0.1 dftyujhnbvcf, z fgyuikjhgyhujh z 20
 
 template = r'\d+' # просто числовые группы
 template = r'\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}'
+template = r'[0-9a-zA-ZA-Я]+' #возможность выбора любого символа из данных
 
 result = re.findall(template, my_string)
 print(result)
