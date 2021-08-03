@@ -11,7 +11,6 @@ def read_json(filename):
 
 filename = "data.json"
 data = read_json(filename)
-print(data)
 
 # 2. Написать функцию сортировки данных по ФАМИЛИИ в поле "name" (у тех у кого она есть).
 # Например для Rene Descartes фамилия это Descartes, у Pierre de Fermat - Fermat и т.д.
