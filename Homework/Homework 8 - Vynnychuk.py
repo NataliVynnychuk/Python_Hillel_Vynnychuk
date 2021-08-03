@@ -55,4 +55,3 @@ for key, value in my_dict_2.items():
     else:
         my_new_dict[key] = value
 print(my_new_dict)
-
