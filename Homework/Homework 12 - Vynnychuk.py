@@ -16,8 +16,8 @@ data = read_json(filename)
 # Например для Rene Descartes фамилия это Descartes, у Pierre de Fermat - Fermat и т.д.
 # Если фамилии нет, то использовать имя, например Euclid.
 
-def sort_by_name(filename):
-    name = filename["name"].split(" ")[-1]
+def sort_by_name(data_dict):
+    name = data_dict["name"].split(" ")[-1]
     return name
 
 sorted_name = sorted(data, key=sort_by_name)
@@ -26,21 +26,22 @@ print(sorted_name)
 #3. Написать функцию сортировки по дате смерти из поля "years".
 # Обратите внимание на сокращение BC. - это означает до н.э.
 
-def sort_by_date_of_death(filename):
-    year = filename["years"]
-    date_of_death = re.findall(r'\d+', year)
-    if "BC" in date_of_death:
-        return int(date_of_death[-1] + [-2])
+def sort_by_date_of_death(data_dict):
+    year_life = data_dict["years"]
+    years = re.findall(r'\d+', year_life)
+    date_of_death = [int(year) for year in years]
+    if "BC" in years:
+        return -1 * min(date_of_death)
     else:
-        return int(date_of_death[-1])
+        return max(date_of_death)
 
 sorted_by_date_of_death = sorted(data, key=sort_by_date_of_death)
 print(sorted_by_date_of_death)
 
 # 4. Написать функцию сортировки по количеству слов в поле "text"
 
-def sort_by_word_count(filename):
-    word_count = filename["text"]
+def sort_by_word_count(data_dict):
+    word_count = data_dict["text"]
     words = word_count.split(" ")
     len_text = len(words)
     return len_text
