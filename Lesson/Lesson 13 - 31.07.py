@@ -2,7 +2,7 @@
 import requests
 import random
 
-def get_raw_quote(lang="ru"):
+def get_raw_quote(lang="en"):
     url = "https://api.forismatic.com/api/1.0/"
     params = {"method": "getQuote",
               "format": "json",

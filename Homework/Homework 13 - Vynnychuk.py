@@ -7,7 +7,7 @@ import csv
 
 url = "http://api.forismatic.com/api/1.0/"
 
-def get_raw_quote(quotes, lang="ru"):
+def get_raw_quote(quotes, lang="en"):
     quote_list = []
     for request_number in range(quotes):
         params = {"method": "getQuote",
